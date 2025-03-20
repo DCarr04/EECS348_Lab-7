@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
 
     if(currentScale == 1 && convertScale == 2){
         float converted = celsius_to_fahrenheit(*uTemp);
-        printf("%f\n", converted);
+        printf("Converted temperature: %f\n", converted);
     }else{
         printf("Error, cannot convert between these scales");
     }
