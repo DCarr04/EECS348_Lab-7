@@ -14,3 +14,8 @@ float celsius_to_kelvin(float celsius){
     float result = celsius + 273.15;
     return result;
 }
+
+float kelvin_to_celsius(float kelvin){
+    float result = kelvin - 273.15;
+    return result;
+}
