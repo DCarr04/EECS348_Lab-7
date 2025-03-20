@@ -9,3 +9,8 @@ float fahrenheit_to_celsius(float fahrenheit){
     float result = (5.0 / 9.0) * (fahrenheit - 32);
     return result;
 }
+
+float celsius_to_kelvin(float celsius){
+    float result = celsius + 273.15;
+    return result;
+}
