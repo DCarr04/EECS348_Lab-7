@@ -51,4 +51,12 @@ float kelvin_to_fahrenheit(float kelvin);
  */
 float fahrenheit_to_kelvin(float fahrenheit);
 
+/**
+ * @brief categorize temperature on scale from freezing to extreme heat
+ * 
+ * @param celsius
+ * @return void
+ */
+void categorize_temperature(float celsius);
+
 #endif /* __REPORT_H__ */
