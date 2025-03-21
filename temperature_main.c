@@ -47,8 +47,13 @@ int main(int argc, char *argv[]) {
         categorize_temperature(converted);
 
     }else if(currentScale == 3 && convertScale == 2){
+        /*
         float converted = kelvin_to_fahrenheit(*uTemp); //try other method
         printf("Converted temperature: %f°F\n", converted);
+        */
+        float kel_to_cel = kelvin_to_celsius(*uTemp);
+        float cel_to_fah = celsius_to_fahrenheit(kel_to_cel);
+        printf("Converted temperature: %fK\n", kel_to_cel);
 
         float toCelsius = kelvin_to_celsius(*uTemp);
         categorize_temperature(toCelsius);
