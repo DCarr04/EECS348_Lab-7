@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
         */
         float kel_to_cel = kelvin_to_celsius(*uTemp);
         float cel_to_fah = celsius_to_fahrenheit(kel_to_cel);
-        printf("Converted temperature: %fK\n", cel_to_fah);
+        printf("Converted temperature: %f°F\n", cel_to_fah);
 
         float toCelsius = kelvin_to_celsius(*uTemp);
         categorize_temperature(toCelsius);
