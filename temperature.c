@@ -36,5 +36,15 @@ float fahrenheit_to_kelvin(float fahrenheit){
 }
 
 void categorize_temperature(float celsius){
-
+    if(celsius < 0){
+        printf("Temperature category: Freezing\nWeather Advisory: Stay Inside.");
+    } else if(celsius < 10){
+        printf("Temperature category: Cold\nWeather Advisory: Wear a coat.");
+    }else if(celsius < 25){
+        printf("Temperature category: Comfortable\nWeather Advisory: You should feel comfortable.");
+    }else if(celsius < 35){
+        printf("Temperature category: Hot\nWeather Advisory: Stay hydrated.");
+    }else{
+        printf("Temperature category: Extreme Heat\nWeather Advisory: Stay Inside.");
+    }
 }
