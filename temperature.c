@@ -16,10 +16,15 @@ float celsius_to_kelvin(float celsius){
 }
 
 float kelvin_to_celsius(float kelvin){
+    if(kelvin < 0){
+        printf("Invalid kelvin- cannot be negative.");
+        return 0.0;
+    }
     float result = kelvin - 273.15;
     return result;
 }
 
+//probably wont need these two, instead call above functions in main
 float kelvin_to_fahrenheit(float kelvin){
     float result = (kelvin - 273.15) * (9.0 / 5.0) + 32;
     return result;
@@ -28,4 +33,8 @@ float kelvin_to_fahrenheit(float kelvin){
 float fahrenheit_to_kelvin(float fahrenheit){
     float result = (fahrenheit - 32) * (5.0 / 9.0) + 273.15;
     return result;
+}
+
+void categorize_temperature(float celsius){
+
 }
