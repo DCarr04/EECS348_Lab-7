@@ -17,7 +17,7 @@ float celsius_to_kelvin(float celsius){
 }
 
 float kelvin_to_celsius(float kelvin){
-    if(kelvin < 0){
+    if(kelvin < 0.0){
         printf("Invalid kelvin- cannot be negative.");
         return 0.0;
     }
