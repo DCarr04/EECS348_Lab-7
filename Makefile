@@ -15,4 +15,5 @@ temperature.exe: temperature.o temperature_main.o# fill in files here
 clean:
 	rm -f *.exe
 	rm -f temperature.exe
+	rm -f football.exe
 
