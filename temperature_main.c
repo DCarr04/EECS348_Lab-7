@@ -7,12 +7,25 @@ int main(int argc, char *argv[]) {
     int convertScale;
     float *uTemp;
     uTemp = &userTemp;
-    printf("Enter the temperature: ");
-    scanf("%f", &userTemp);
-    printf("Choose the current scale (1) Celsius, (2) Fahrenheit, (3) Kelvin: ");
-    scanf("%d", &currentScale);
-    printf("Convert to (1) Celsius, (2) Fahrenheit, (3) Kelvin: ");
-    scanf("%d", &convertScale);
+    float stopCondition = 1.0;
+    while(stopCondition != 0.0){
+        printf("\nEnter the temperature: ");
+        scanf("%f", &userTemp);
+        printf("Choose the current scale (1) Celsius, (2) Fahrenheit, (3) Kelvin: ");
+        scanf("%d", &currentScale);
+        printf("Convert to (1) Celsius, (2) Fahrenheit, (3) Kelvin: ");
+        scanf("%d", &convertScale);
+
+        if (currentScale == 3 && *uTemp < 0.0){
+            //stopCondition = 1.0;
+            printf("Invalid, kelvin cannot be negative.");
+        }else if(currentScale == convertScale){
+            printf("Error, cannot convert between the same scales.");
+        } else{
+            stopCondition = 0.0;
+        }
+    }
+    
 
     if(currentScale == 1 && convertScale == 2){
         float converted = celsius_to_fahrenheit(*uTemp);
