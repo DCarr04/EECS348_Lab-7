@@ -18,9 +18,9 @@ int main(int argc, char *argv[]) {
 
         if (currentScale == 3 && *uTemp < 0.0){
             //stopCondition = 1.0;
-            printf("Invalid, kelvin cannot be negative.");
+            printf("\nInvalid, kelvin cannot be negative.");
         }else if(currentScale == convertScale){
-            printf("Error, cannot convert between the same scales.");
+            printf("\nError, cannot convert between the same scales.");
         } else{
             stopCondition = 0.0;
         }
